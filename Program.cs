@@ -97,3 +97,60 @@ else Console.WriteLine($"Sum of odd elements of array is: {SumOfOddElements(myAr
 
 // Task 38. Задайте массив вещественных чисел. Найдите разницу между максимальным
 // и минимальным элементом массива.
+
+/*
+
+double[] CreateAnArray(int size)
+{
+    double[] array = new double[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write($"Input a {i} number of massive: ");
+        array[i] = Convert.ToDouble(Console.ReadLine());
+    }
+
+    return array;
+}
+
+void WriteArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+double FindMax(double[] array)
+{
+    double max = array[0];
+
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] > max)
+            max = array[i];
+    
+    return max;
+}
+
+double FindMin(double[] array)
+{
+    double min = array[0];
+
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] < min)
+            min = array[i];
+    
+    return min;
+}
+
+Console.Write("Input a lenght of array: ");
+int m = Convert.ToInt32(Console.ReadLine());
+
+double[] myArray = CreateAnArray(m);
+Console.Write("Your array is: ");
+WriteArray(myArray);
+Console.WriteLine($"Max number of array is {FindMax(myArray)}");
+Console.WriteLine($"Min number of array is {FindMin(myArray)}");
+Console.WriteLine($"Difference between Max and Min numbers of array is {FindMax(myArray) - FindMin(myArray)}");
+
+*/
